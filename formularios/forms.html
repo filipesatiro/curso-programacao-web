@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../links/favicon.ico" type="image/x-icon">
+    <title>Formulários</title>
+</head>
+<body>
+    <hr>
+    <h1>Formulários</h1>
+    
+
+    <form>
+        <!--Formulário do tipo texto-->
+        <label for="campo_nome">Nome:</label>
+        <input id="campo_nome" type="text" placeholder="Digite se nome aqui" required>
+        <br><br>
+        <label for="e-mail">E-mail</label>
+        <input id="e-mail" type="email" placeholder="digite seu e-mail" required>
+        <br><br>
+        <label for="senha">Senha</label>
+        <input id="senha" type="password" placeholder="digite sua senha" required>
+        <br><br>
+        <hr>
+        <!--Formulárioi do tipo apenas uma escolha-->
+        <h2>Animal de estimação</h2>
+        <label for="dog">Cachorro</label>
+        <input type="radio" id="dog" name="animal" value="cachorro">
+        <br><br>
+        <label for="cat">gato</label>
+        <input type="radio" id="cat" name="animal" value="gato">
+        <br><br>
+        <label for="bird">Passaro</label>
+        <input type="radio" id="bird" name="animal" value="Passaro">
+        <!--Formulário com multiplas escolhas-->
+        <hr>
+        <h2>Formulário O que você tem em casa?</h2>
+        <label for="item1"> TV</label>
+        <input type="checkbox" id="item1" name="item1" value="TV">
+        <br><br>
+        <label for="item2"> Geladeira</label>
+        <input type="checkbox" id="item2" name="item2" value="Geladeira">
+        <br><br>
+        <label for="item3"> Computador</label>
+        <input type="checkbox" id="item3" name="item3" value="Computador">
+        <!--Campo do tipo select para selecionar um item de sua preferencia no exemplo aqui mencionado selecione uma das cores-->
+        <hr>
+        <h2>Escolha uma Cor:</h2>
+        <select name="cores">
+            <option selected disabled value="">selecione uma cor</option>
+            <option value="vermelho">vermelho</option>
+            <option value="azul">azul</option>
+            <option value="amarelo">amarelo</option>
+            <option value="verde">verde</option>
+        </select>
+        <br><br>
+        <hr>
+        <h2>Digite sua mensagem:</h2>
+        <textarea  required name="mensagem" placeholder="digite aqui"rows="18"cols="50"> 
+        </textarea>
+        <br><br>
+        <input type="submit" value="Enviar Formulário" required>
+        <br><br>
+    </form>
+    <button>Clique aqui</button>
+    <hr>
+    <a href="../links/index2.html">Pagina Principal</a>
+</body>
+</html>
